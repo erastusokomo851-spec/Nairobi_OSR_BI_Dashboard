@@ -60,7 +60,11 @@ st.markdown("""
 # LOAD DATA
 # ----------------------------
 
-file_path = "../data/processed/OSR2025JUNE30_Clean.xlsx"
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+file_path = BASE_DIR / "data" / "processed" / "OSR2025JUNE30_Clean.xlsx"
 
 df = pd.read_excel(file_path)
 
