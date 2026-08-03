@@ -422,7 +422,7 @@ import plotly.express as px
 # DASHBOARD HEALTH SCORE
 # ======================================================
 
-health_score = 70
+health_score = 63
 
 st.markdown("---")
 
